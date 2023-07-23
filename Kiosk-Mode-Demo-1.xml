@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+<Profiles>
+<Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">       
+<AllAppsList>
+<AllowedApps> 
+<App AppUserModelId="Microsoft.BingNews_8wekyb3d8bbwe!AppexNews" />
+<App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+<App AppUserModelId="Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub" />
+<App AppUserModelId="Microsoft.WindowsAlarms_8wekyb3d8bbwe!App" />
+<App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+<App AppUserModelId="Microsoft.WindowsMaps_8wekyb3d8bbwe!App" />
+<App AppUserModelId="MSEdge" />
+<App DesktopAppPath="C:\Windows\System32\LiveCaptions.exe" rs5:AutoLaunch="true" />
+</AllowedApps> 
+</AllAppsList> 
+<win11:StartPins>
+<![CDATA[  
+{ "pinnedList":[
+{"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Accessibility\\LiveCaptions.lnk"},
+{"desktopAppLink":"%PROGRAMDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"},
+{"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}
+] }
+]]>
+</win11:StartPins>
+<Taskbar ShowTaskbar="true"/>
+</Profile> 
+</Profiles>
+<Configs>
+<Config>
+<Account>kiosk</Account>
+<DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+</Config>
+<Config>
+<AutoLogonAccount rs5:DisplayName="Hello Multi-app Kiosk Windows 11" />
+<DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+</Config>
+</Configs>
+</AssignedAccessConfiguration>
